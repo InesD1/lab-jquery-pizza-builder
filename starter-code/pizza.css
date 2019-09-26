@@ -56,6 +56,10 @@ header, nav, details, section, aside, footer {
     display: block;
 }
 
+.hidden-ingredients {
+    display: none; 
+}
+
 body {
     font-family: 'Courier', 'Courier New', Serif;
     max-width: 750px;

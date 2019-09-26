@@ -41,18 +41,19 @@
 
       <b>$10 cheese pizza</b>
       <ul>
-        <li>$1 pepperonni</li>
-        <li>$1 mushrooms</li>
-        <li>$1 green peppers</li>
-        <li>$3 white sauce</li>
-        <li>$5 gluten-free crust</li>
+        <li id="pepperonni-li">$<span class="unit-price-pepperonni">1</span> pepperonni</li>
+        <li id="mushrooms-li">$<span class="unit-price-mushrooms">1</span> mushrooms</li>
+        <li id="green-peppers-li">$<span class="unit-price-green-peppers">1</span> green peppers</li>
+        <li class="sauce-li hidden-ingredients">$<span class="unit-price-sauce">3</span> white sauce</li>
+        <li class="crust-li hidden-ingredients">$<span class="unit-price-crust">5</span> gluten-free crust</li>
       </ul>
-      <strong>$21</strong>
+      <strong>$<span class="total-price">21</span></strong>
     </aside>
     <!-- End Price -->
 
     <!-- Begin Pizza -->
-    <div id="pizza">
+  <div id="pizza">
+    <div id="green-peppers">
       <section class="green-pepper one"></section>
       <section class="green-pepper two"></section>
       <section class="green-pepper three"></section>
@@ -74,7 +75,9 @@
       <section class="green-pepper nineteen"></section>
       <section class="green-pepper twenty"></section>
       <section class="green-pepper twenty-one"></section>
+    </div>
 
+    <div id="mushrooms">
       <section class="mushroom one">
         <div class="cap">1</div>
         <div class="stem"></div>
@@ -234,7 +237,9 @@
         <div class="cap">31</div>
         <div class="stem"></div>
       </section>
+    </div>
 
+    <div id="pepperonnies">
       <section class="pep one">1</section>
       <section class="pep two">2</section>
       <section class="pep three">3</section>
@@ -267,12 +272,15 @@
       <section class="pep thirty">30</section>
       <section class="pep thirty-one">31</section>
       <section class="pep thirty-three">33</section>
+    </div>
 
+    <div id="other-ingredients">
       <section class="crust crust-gluten-free">
         <section class="cheese"></section>
         <section class="sauce sauce-white"></section>
       </section>
     </div>
+  </div>
     <!-- End Pizza -->
 
     <!-- Begin Crumbs -->
